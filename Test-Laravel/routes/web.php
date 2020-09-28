@@ -13,29 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function(){
+    return view("home");
 });
 
-Route::get('/profil', function() {
-    return "Ini adalah halaman profil";
-}) -> name('profil');
-
-
-//route name
-Route::get('/testname', function() {
-    return route('profil');
+Route::get("/about", function(){
+    return view("about");
 });
-
-
-// Parameter
-Route::get('profil/{id}', function($id) {
-    return $id;
-});
-
-
-// Controller
-Route::get('/tescontroller', 'tesController@show');
-
-// Resource
-Route::resource('/coba', 'resController');

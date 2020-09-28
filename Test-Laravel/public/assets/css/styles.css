@@ -1,0 +1,71 @@
+#awal {
+  text-align: center;
+  padding: 230px;
+  background: url(../../assets/img/background.jpeg) no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#awal .jumbotron {
+  padding: 40px;
+  background-color: rgba(255,255,255,0.75);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#selamat-datang h1 {
+  margin-bottom: 30px;
+}
+
+#selamat-datang p {
+  max-width: 800px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+#about .site-section {
+  text-align: left;
+}
+
+#kenapa p {
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #awal {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .jumbotron {
+    padding: 20px;
+  }
+}
+
+#kenapa h1 {
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+#kenapa .col-md-4 {
+  margin-bottom: 40px;
+}
+
+#about h1 {
+  margin-bottom: 40px;
+}
+
+#kenapa i {
+  font-size: 40px;
+}
+
+#kenapa h2 {
+  font-weight: normal;
+}
+
