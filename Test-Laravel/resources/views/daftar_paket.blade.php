@@ -14,17 +14,19 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
 <body>
-    <a href="/daftar_paket"> + Tambah Pegawai Baru</a>
+	@include('navigation')
+
+    <a href="/daftar_paket/tambah"> + Tambah Paket Baru</a>
 	
 	<br/>
 	<br/>
  
 	<table border="1">
 		<tr>
-			<th>Nama</th>
-			<th>Jabatan</th>
-			<th>Umur</th>
-			<th>Alamat</th>
+			<th>ID Paket</th>
+			<th>Nama Paket</th>
+			<th>Durasi</th>
+			<th>Harga</th>
 			<th>Opsi</th>
 		</tr>
 		@foreach($warnet_indomaju as $p)
@@ -34,9 +36,9 @@
 			<td>{{ $p->jam_paket }}</td>
 			<td>{{ $p->harga_paket }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->id_paket }}">Edit</a>
+				<a href="/daftar_paket/edit/{{ $p->id_paket }}">Edit</a>
 				|
-				<a href="/pegawai/hapus/{{ $p->id_paket }}">Hapus</a>
+				<a href="/daftar_paket/hapus{{ $p->id_paket }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
