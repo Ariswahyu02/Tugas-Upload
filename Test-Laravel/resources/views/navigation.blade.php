@@ -5,8 +5,9 @@
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="/" style="font-size: 16px;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about" style="font-size: 16px;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/" style="font-size: 16px;">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about" style="font-size: 16px;">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/daftar_paket" style="font-size: 16px;">Daftar Paket</a></li>
                 </ul>
             </div>
         </div>

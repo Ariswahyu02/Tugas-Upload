@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
 
 <div class="container site-section" id="about">
-    <h1 style="font-family: Arial, Hevetica, sans-serif;"><strong>About</strong></h1>
+    <h1 style="font-family: Arial, Hevetica, sans-serif;"><strong>Tentang</strong></h1>
     <div class="row row-cols-2">
         <div class="col">
             <h2 class="text-left"><strong>Apakah Software dan Game di Warnet Indomaju Legal?</strong></h2>
