@@ -15,33 +15,43 @@
     </head>
 <body>
 	@include('navigation')
-
-    <a href="/daftar_paket/tambah"> + Tambah Paket Baru</a>
-	
-	<br/>
-	<br/>
  
-	<table border="1">
-		<tr>
-			<th>ID Paket</th>
-			<th>Nama Paket</th>
-			<th>Durasi</th>
-			<th>Harga</th>
-			<th>Opsi</th>
-		</tr>
-		@foreach($warnet_indomaju as $p)
-		<tr>
-			<td>{{ $p->id_paket }}</td>
-			<td>{{ $p->nama_paket }}</td>
-			<td>{{ $p->jam_paket }}</td>
-			<td>{{ $p->harga_paket }}</td>
-			<td>
-				<a href="/daftar_paket/edit/{{ $p->id_paket }}">Edit</a>
-				|
-				<a href="/daftar_paket/hapus{{ $p->id_paket }}">Hapus</a>
-			</td>
-		</tr>
-		@endforeach
+	<div class="container">
+		<br><br>
+		<a href="/daftar_paket/tambah"> + Tambah Paket Baru</a>
+		<br/>
+
+		<div class="table-responsive text-monospace border-primary shadow-lg" style="background: var(--pink);color: var(--dark);filter: grayscale(10%);border-width: 2px;border-style: solid;">
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>ID Paket</th>
+						<th>Nama Paket</th>
+						<th>Durasi</th>
+						<th>Harga</th>
+						<th>Opsi</th>
+					</tr>
+				</thead>
+				<tbody class="text-light">
+					@foreach($warnet_indomaju as $p)
+					<tr>
+						<td>{{ $p->id_paket }}</td>
+						<td>{{ $p->nama_paket }}</td>
+						<td>{{ $p->jam_paket }}</td>
+						<td>{{ $p->harga_paket }}</td>
+						<td>
+					<a href="/daftar_paket/edit/{{ $p->id_paket }}" style = "color:whitesmoke">Edit</a>
+					<a href="/daftar_paket/hapus/{{ $p->id_paket }}" style = "color:whitesmoke">Hapus</a>
+						</td>
+					</tr>
+				@endforeach
+				</tbody>
+			</table>
+		</div>
+	</div> 
 	</table>
+	<br>
+	<br><br><br>
+	@include('footer')
 </body>
 </html>
